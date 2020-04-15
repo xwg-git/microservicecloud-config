@@ -1,13 +1,13 @@
-spring: 
+spring:
   profiles:
     active:
     - dev
---- 
+---
 server:
   port: 8001
-spring: 
+spring:
    profiles: dev
-   application: 
+   application:
     name: microservicecloud-config-dept-client
    datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -19,10 +19,10 @@ spring:
       min-idle: 5
       initial-size: 5
       max-total: 5
-      max-wait-millis: 200 
+      max-wait-millis: 200
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.atguigu.springcloud.entities
+  type-aliases-package: com.chw.entities
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
 
@@ -37,8 +37,8 @@ eureka:
 
 
 info:
-  app.name: atguigu-microservicecloud-springcloudconfig01
-  company.name: www.atguigu.com
+  app.name: chw-microservicecloud-springcloudconfig01
+  company.name: www.chw.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
 ---
@@ -63,7 +63,7 @@ spring:
   
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.atguigu.springcloud.entities
+  type-aliases-package: com.chw.entities
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml
 
@@ -78,7 +78,7 @@ eureka:
 
 
 info:
-  app.name: atguigu-microservicecloud-springcloudconfig02
-  company.name: www.atguigu.com
+  app.name: chw-microservicecloud-springcloudconfig02
+  company.name: www.chw.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
